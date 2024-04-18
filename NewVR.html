@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <a-scene>
+        <!--Camera-->
+        <a-entity position="0 0 42">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <!--Sun-->
+        <a-entity>
+            <a-sphere position="0 0 0" radius="3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Map_of_the_full_sun.jpg/1280px-Map_of_the_full_sun.jpg"></a-sphere>
+        </a-entity>
+
+        <!--Mercury-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property:rotation; to:0 360 0; easing:linear; loop:true; dur:10000;">
+            <a-sphere position="5 0 0" radius="0.2" src="https://static.vecteezy.com/system/resources/previews/035/877/120/non_2x/ai-generated-mercury-surface-texture-background-free-photo.jpg"></a-sphere>
+        </a-entity>
+
+        <!--Venus-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property:rotation; to:0 360 0; easing:linear; loop:true; dur:15000;">
+            <a-sphere position="8 0 0" radius="0.5" src="https://static.wikia.nocookie.net/planet-texture-maps/images/7/70/RS3_Venus.jpg/revision/latest?cb=20220815015006"></a-sphere>
+        </a-entity>
+
+        <!--Earth-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property:rotation; to:0 360 0; easing:linear; loop:true; dur:19000;">
+            <a-sphere position="10 0 0" radius="0.9" src="https://t3.ftcdn.net/jpg/03/64/91/04/360_F_364910470_DCjyTv7AlFX0or7TGEcJWkz7JDLnCE5G.jpg"></a-sphere>
+        </a-entity>
+
+        <!--Mars-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property:rotation; to:0 360 0; easing:linear; loop:true; dur:23000;">
+            <a-sphere position="11.5 0 0" radius="0.75" src="https://media.istockphoto.com/id/488156684/photo/alien-planet-with-craters-4.jpg?s=612x612&w=0&k=20&c=Yi8aOsN6UWT2yqzTqJ_z9qwymTKIGyFNUXsBJkjVPNk="></a-sphere>
+        </a-entity>
+
+        <!--Jupiter-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property:rotation; to:0 360 0; easing:linear; loop:true; dur:28000;">
+            <a-sphere position="15 0 0" radius="2" src="https://static.wikia.nocookie.net/planet-texture-maps/images/9/95/RS3_Jupiter.jpg/revision/latest?cb=20220815013322"></a-sphere>
+        </a-entity>
+
+        <!--Saturn-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property:rotation; to:0 360 0; easing:linear; loop:true; dur:32000;">
+            <a-sphere position="22 0 0" radius="1.2" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a43529a6-5439-4e46-b973-e272e62c2e6c/d8f7djy-670bb7da-64e6-47f7-a387-6c5e74051592.jpg/v1/fill/w_1280,h_640,q_75,strp/saturn_planetary_texture_stock_image_by_uxmal750ad_d8f7djy-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvYTQzNTI5YTYtNTQzOS00ZTQ2LWI5NzMtZTI3MmU2MmMyZTZjXC9kOGY3ZGp5LTY3MGJiN2RhLTY0ZTYtNDdmNy1hMzg3LTZjNWU3NDA1MTU5Mi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.9UIAIMHMD-G3E17aWeBliFg9raip15kt9uM3d8Iq4tc">
+                <a-torus color="orange" radius="3" rotation="90 0 0" radius-tubular="0.02" segments-tubular="1000"></a-torus>
+            </a-sphere>
+        </a-entity>
+        
+        <!--Uranus-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property:rotation; to:0 360 0; easing:linear; loop:true; dur:34000;">
+            <a-sphere position="30 0 0" radius="1.5" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3dbe3745-0eb8-4e98-aac3-197221ef117e/dc28qg7-205f3f54-cc0d-44cf-9b1f-b70183f553ba.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkYmUzNzQ1LTBlYjgtNGU5OC1hYWMzLTE5NzIyMWVmMTE3ZVwvZGMyOHFnNy0yMDVmM2Y1NC1jYzBkLTQ0Y2YtOWIxZi1iNzAxODNmNTUzYmEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b26fzftjNAlpM5G2sgSR1Ycmov1xfSpi-87Z6KKKTOw"></a-sphere>
+        </a-entity>
+
+        <!--Neptune-->
+        <a-entity position="0 0 0" rotation="0 0 0" animation="property:rotation; to:0 360 0; easing:linear; loop:true; dur:36000;">
+            <a-sphere position="36 0 0" radius="1.7" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/efbcbef1-b203-4367-9335-2720d26f49ec/dewawlh-6be379ed-b087-4ea7-8715-709914cafe8b.png/v1/fill/w_1024,h_512,q_80,strp/don_davis_neptune_map_4k__fictional__by_mrspace43_celestia_dewawlh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvZWZiY2JlZjEtYjIwMy00MzY3LTkzMzUtMjcyMGQyNmY0OWVjXC9kZXdhd2xoLTZiZTM3OWVkLWIwODctNGVhNy04NzE1LTcwOTkxNGNhZmU4Yi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nz0dPK3TZiYgIyX0a4HwbEg16vN_bngJXmXfH3JkUb8"></a-sphere>
+        </a-entity>
+
+        <!--Sky-->
+        <a-sky src="https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?cs=srgb&dl=pexels-kai-pilger-1341279.jpg&fm=jpg"></a-sky>
+    </a-scene>
+</html>
