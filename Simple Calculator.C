@@ -3,8 +3,9 @@
 
 void main()
 {
-int a, b, c;
-printf("\n\t****** Simple Calculator ******");
+int a, b, c, i;
+start:
+printf("\n\n\t****** Simple Calculator ******");
 printf("\n\t===============================\n");
 printf("\nEnter First Number: ");
 scanf("%d", &a);
@@ -33,4 +34,8 @@ break;
 default:
 printf("\nInvalid Input.....");
 }
+printf("\nEnter 1 to Start Again");
+scanf("%d", &i);
+if (i==1)
+goto start;
 }

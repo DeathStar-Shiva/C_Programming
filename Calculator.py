@@ -1,8 +1,10 @@
 print("Hello World")
 name=input("Enter your Name: ")
 print("Hello", name)
-print("Welcome to Calculator")
-while True:
+print("\tWelcome to My Calculator")
+print("\t========================")
+
+def cal():
     x=int(input("Enter First number: "))
     y=int(input("Enter Second number: "))
     print(x,y)
@@ -27,3 +29,10 @@ while True:
         print("Remainder: ",x%y)
     else:
         print("*** Wrong Input ***")
+    a=int(input("\nEnter 1 to Start Again: "))
+    if (a==1):
+        cal()
+    else:
+        print("Bye", name)
+
+cal()
